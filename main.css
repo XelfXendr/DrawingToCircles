@@ -1,0 +1,17 @@
+canvas
+{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+}
+#circleNumberText
+{
+    position: absolute;
+    top: 500px;
+}
+#drawButton
+{
+    position: absolute;
+    top: 550px;
+}
