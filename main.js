@@ -110,13 +110,13 @@ window.onload = () =>
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
             points = JSON.parse(xobj.responseText);
-            lineContext.moveTo(0,0);
-            lineContext.beginPath();
+            inputContext.moveTo(0,0);
+            inputContext.beginPath();
             points.forEach(p => {
-                lineContext.lineTo(p.x, p.y);
+                inputContext.lineTo(p.x, p.y);
             });
-            lineContext.stroke();
-            lineContext.closePath()
+            inputContext.stroke();
+            inputContext.closePath()
             drawButton.onclick();
           }
     };
